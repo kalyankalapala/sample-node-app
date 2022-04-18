@@ -1,7 +1,7 @@
 ### before ###
 #!/bin/bash
 
-##### install docker #####
+##### install docker ######
 sudo yum install -y docker ### only the users mentioned in /etc/sudoers file will be allowed to make changes to the docker.
 sudo systemctl enable docker
 sudo systemctl restart docker
