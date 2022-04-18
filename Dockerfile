@@ -1,5 +1,6 @@
-##FROM node:carbon
-FROM 850769113977.dkr.ecr.us-east-1.amazonaws.com/cloudavengersecr:latest
+#FROM node:carbon
+FROM 850769113977.dkr.ecr.us-east-1.amazonaws.com/cicdecr
+
 
 # Create app directory
 WORKDIR /usr/src/app
