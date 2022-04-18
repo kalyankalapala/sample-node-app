@@ -19,7 +19,7 @@ pipeline {
                 }
             }
         }
-        stage('Docker Deploy Dev'){
+        //stage('Docker Deploy Dev'){
             steps{
                 sshagent(['tomcat-dev']) {
                     withCredentials([string(credentialsId: 'nexus-pwd', variable: 'nexusPwd')]) {
