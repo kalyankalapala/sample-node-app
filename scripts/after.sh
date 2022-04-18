@@ -21,7 +21,7 @@ cd /home/ec2-user/dockernodejs
 #sudo docker run -it -d -p 80:8080 kalyankalapala/cloudavengers:latest
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 850769113977.dkr.ecr.us-east-1.amazonaws.com
 docker-compose down
-docker-compose build --no-cache
+#docker-compose build --no-cache
 docker-compose up -d
 #docker pull 850769113977.dkr.ecr.us-east-1.amazonaws.com/cloudavengersecr:latest
 #docker run -it -d -p 8080:8080 --name cloudavengers 850769113977.dkr.ecr.us-east-1.amazonaws.com/cloudavengersecr:latest
