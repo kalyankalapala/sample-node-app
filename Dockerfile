@@ -1,3 +1,4 @@
+#FROM node:carbon
 FROM 850769113977.dkr.ecr.us-east-1.amazonaws.com/cloudavengersecr:latest
 
 # Create app directory
