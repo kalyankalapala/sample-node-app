@@ -1,1 +1,1 @@
-# sample-node-app
+# Intro to Cloud Computing - Group Project
