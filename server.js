@@ -1,16 +1,15 @@
-'use strict';
+//server.js//
 
 const express = require('express');
+const path = require('path');
 
-// Constants
-const PORT = 8080;
-const HOST = '0.0.0.0';
-
-// App
 const app = express();
-app.get('/', (req, res) => {
-  res.send('<h1 style="color:green;">kalyan kalapala - UCM</h1> \n');
+const port = process.env.PORT || 8080;
+
+// sendFile will go here
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+app.listen(port);
+console.log('Server started at http://localhost:' + port);
