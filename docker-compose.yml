@@ -8,6 +8,3 @@ services:
     ports:
       - "8080:8080"
     container_name: docker-nodejs
-    #volumes:
-     #  - ./api:/usr/src/app/api
-      # - /usr/src/app/api/node_modules
